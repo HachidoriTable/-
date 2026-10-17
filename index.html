@@ -284,6 +284,44 @@ footer {
   .rate-row { font-size: .88rem; }
   .cta { padding: 56px 20px; }
 }
+
+/* 周辺スポット */
+.around-heading {
+  margin: 35px 0 16px;
+  color: #65412b;
+  font-size: 1.15rem;
+  border-bottom: 1px solid #d9c4ad;
+  padding-bottom: 10px;
+}
+.around-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.around-card {
+  background: #fff9f0;
+  border: 1px solid #e4d4c2;
+  border-radius: 10px;
+  padding: 17px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  transition: .2s;
+}
+.around-card:hover {
+  background: #e9d5bf;
+  transform: translateY(-2px);
+}
+.around-card span { color: #a57b5b; }
+
+@media (max-width: 540px) {
+  .around-grid { grid-template-columns: 1fr; }
+  .around-card { padding: 14px 16px; }
+}
+
 </style>
 </head>
 
@@ -424,6 +462,36 @@ footer {
       タオル・歯ブラシなどはご持参ください。<br>
       シャンプー・ボディソープは備え付けです。
     </p>
+  </div>
+</section>
+
+<!-- 周辺スポット -->
+<section class="wrap" id="around">
+  <div class="center">
+    <div class="eyebrow">EXPLORE GUJO</div>
+    <h2>周辺のスキー場・観光スポット</h2>
+    <p>
+      雪山を楽しむ週末も、郡上を巡る旅も。<br>
+      まつぼっくりを拠点に、思い思いの時間を。
+    </p>
+  </div>
+
+  <h3 class="around-heading">❄ スキー場</h3>
+  <div class="around-grid">
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=鷲ヶ岳スキー場" target="_blank" rel="noopener">鷲ヶ岳スキー場 <span>↗</span></a>
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=ダイナランド" target="_blank" rel="noopener">ダイナランド <span>↗</span></a>
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=高鷲スノーパーク" target="_blank" rel="noopener">高鷲スノーパーク <span>↗</span></a>
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=ホワイトピアたかす" target="_blank" rel="noopener">ホワイトピアたかす <span>↗</span></a>
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=ひるがの高原スキー場" target="_blank" rel="noopener">ひるがの高原スキー場 <span>↗</span></a>
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=ウイングヒルズ白鳥リゾート" target="_blank" rel="noopener">ウイングヒルズ白鳥リゾート <span>↗</span></a>
+  </div>
+
+  <h3 class="around-heading">🌿 観光・温泉</h3>
+  <div class="around-grid">
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=牧歌の里" target="_blank" rel="noopener">牧歌の里 <span>↗</span></a>
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=ひるがの分水嶺公園" target="_blank" rel="noopener">ひるがの分水嶺公園 <span>↗</span></a>
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=湯の平温泉+郡上市" target="_blank" rel="noopener">湯の平温泉 <span>↗</span></a>
+    <a class="around-card" href="https://www.google.com/maps/search/?api=1&amp;query=郡上八幡" target="_blank" rel="noopener">郡上八幡の町並み <span>↗</span></a>
   </div>
 </section>
 
